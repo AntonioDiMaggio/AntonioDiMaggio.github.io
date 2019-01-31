@@ -1,2 +1,2 @@
-# AntonioDiMaggio.github.io
-Website to host or show case my projects.
+# DiMaggioGamesWebsite
+A website to act as the front end to my brand.
