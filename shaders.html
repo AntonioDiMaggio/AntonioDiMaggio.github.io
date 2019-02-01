@@ -1,0 +1,32 @@
+<html lang="en-US">
+    <head>
+        <title>
+            DiMaggio Games
+        </title>
+        <link rel="stylesheet" href="main.css"/>
+        <link rel="shortcut icon" href="Icons/DiMaggioGamesIcon1.ico">
+    </head>
+    <body>
+         <header>
+              <iframe src="navbar.html" width="100%" height="100px" style="border: none"></iframe>
+         </header>
+         <h1>
+              DiMaggio Games
+         </h1>
+
+         <script id="fragment-shader" type="not-javascript">
+            out vec4 fragcolor;
+
+            void mainImage(out vec4, in vec2);
+            void main(void) { mainImage(fragColor,inData.v_texcoord * iResolution.xy); }
+            
+            void mainImage(out vec4 fragColor, in vec2 fragCoord)
+            {
+                vec2 uv = fragCoord.xy / iResolution.xy;
+                vec2 disp = (texture2D(iChannel0, uv).rg * 2.0) - 1.0;
+                vec3 col = texture2D(iChannel0, uv + disp).rgb;
+                fragColor = vec4(col,1.0);
+            }
+         </script>
+    </body>
+</html>
