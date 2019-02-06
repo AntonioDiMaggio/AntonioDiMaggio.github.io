@@ -28,6 +28,22 @@ body.navbar {
      background-color: black;
 }
 
+a:link {
+  color: #FFAAAA
+}
+
+a:visited {
+  color: #FFAAAA
+}
+
+a:hover {
+  color: #FFFFFF
+}
+
+a:active {
+  color: #FFFFFF
+}
+
 .sprintimages {
      text-align: center;
      width: 50%;
